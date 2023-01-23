@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +15,11 @@
   --White: hsl(0, 0%, 100%);
 
   --outfit: "Outfit", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
 }
 
 body {
-  background-color: var(--Very-dar-blue-main-BG);
+  background-color: hsl(216, 39%, 14%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,16 +28,17 @@ body {
 }
 
 .outside__layer {
-  width: 353px;
-  height: 593px;
-  background-color: var(--Very-dark-blue-line);
+  width: 300px;
+  height: 500px;
+  margin-top: 20px;
+  background-color: hsl(218, 38%, 13%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
 }
-.inside__layer {
+/* .inside__layer {
   width: 292px;
   height: 443px;
   background-color: var(--Very-dark-blue-line);
@@ -43,17 +47,21 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-}
+} */
 
 #container__cryptocard {
-  width: 245px;
-  height: 460px;
-  background-color: var(--Very-dark-blue-card-BG);
+  width: 275px;
+  height: 480px;
+  background-color: hsl(215, 39%, 18%);
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   border-radius: 15px;
   padding: 20px;
+}
+
+.equilibrium {
+  padding: 20px 0;
 }
 
 .equilibrium_img > img {
@@ -73,18 +81,31 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 205px;
+  height: 15px;
+  margin: 20px 0;
+}
+#custom {
+  padding: 10px 5px;
 }
 
 .crypto_price {
   justify-content: flex-start;
 }
+.time_left {
+  justify-content: flex-end;
+}
 
 .avatar {
-  max-width: 35px;
-  max-height: 35px;
-
+  max-width: 25px;
+  max-height: 25px;
   border-radius: 50%;
   border: 1px solid var(--White);
+  margin-top: 8px;
+}
+#icons,
+#clock {
+  padding: 20px 0;
 }
 
 .creator {
@@ -95,25 +116,33 @@ body {
   padding: 10px 0;
   margin-top: 10px;
 }
+
 .creator > p {
-  margin-top: 10px;
+  margin-top: 12px;
   margin-left: 15px;
+  font-size: smaller;
 }
 p {
   font-family: var(--outfit);
-  font-size: 300;
-  color: var(--softblue);
+  font-weight: 400;
   font-size: small;
+  color: var(--softblue);
+  margin: 10px 0;
+  line-height: 1.1rem;
 }
+
 h1 {
   color: var(--White);
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--outfit);
+  font-size: large;
 }
+
 .crypto__price__time > .crypto_price {
   color: var(--cyan);
   margin-left: 5px;
 }
+
 .crypto__price__time > p {
   margin-left: 5px;
 }
@@ -121,4 +150,19 @@ h1 {
 .name {
   font-weight: 400;
   color: var(--White);
+}
+
+.attribution {
+  color: var(--White);
+  margin-top: 20px;
+  font-size: smaller;
+  font-family: var(--montserrat);
+}
+
+a {
+  color: hsl(344, 53%, 57%);
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(344, 53%, 20%);
 }
