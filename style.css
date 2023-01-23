@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --softblue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --Very-dar-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  --outfit: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--Very-dar-blue-main-BG);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.outside__layer {
+  width: 353px;
+  height: 593px;
+  background-color: var(--Very-dark-blue-line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.inside__layer {
+  width: 292px;
+  height: 443px;
+  background-color: var(--Very-dark-blue-line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+#container__cryptocard {
+  width: 245px;
+  height: 460px;
+  background-color: var(--Very-dark-blue-card-BG);
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.equilibrium_img > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  position: relative;
+  object-fit: cover;
+}
+.flex__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.crypto__price__time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crypto_price {
+  justify-content: flex-start;
+}
+
+.avatar {
+  max-width: 35px;
+  max-height: 35px;
+
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+
+.creator {
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid var(--Very-dark-blue-line);
+  max-width: 100%;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+.creator > p {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+p {
+  font-family: var(--outfit);
+  font-size: 300;
+  color: var(--softblue);
+  font-size: small;
+}
+h1 {
+  color: var(--White);
+  font-weight: 600;
+  font-family: var(--outfit);
+}
+.crypto__price__time > .crypto_price {
+  color: var(--cyan);
+  margin-left: 5px;
+}
+.crypto__price__time > p {
+  margin-left: 5px;
+}
+
+.name {
+  font-weight: 400;
+  color: var(--White);
+}
